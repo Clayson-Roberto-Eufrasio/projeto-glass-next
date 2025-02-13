@@ -1,9 +1,12 @@
+import { BodyOfPagesStyled } from "@/components/BodyOfPages/styles"
+import HeaderContainer from "@/components/Header"
+
 const Fotos = () => {
-    return (
-        <div>
-            <h1>Pagina Fotos</h1>
-        </div>
-    )
+  return (
+    <BodyOfPagesStyled>
+      <HeaderContainer />
+    </BodyOfPagesStyled>
+  )
 }
 
 export default Fotos

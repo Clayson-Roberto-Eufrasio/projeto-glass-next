@@ -1,9 +1,12 @@
+import { BodyOfPagesStyled } from "@/components/BodyOfPages/styles"
+import HeaderContainer from "@/components/Header"
+
 const GoogleGlass = () => {
-    return (
-        <div>
-            <h1>Pagina GoogleGlass</h1>
-        </div>
-    )
+  return (
+    <BodyOfPagesStyled>
+      <HeaderContainer />
+    </BodyOfPagesStyled>
+  )
 }
 
 export default GoogleGlass

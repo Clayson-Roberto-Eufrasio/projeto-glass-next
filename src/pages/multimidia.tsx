@@ -1,9 +1,12 @@
+import { BodyOfPagesStyled } from "@/components/BodyOfPages/styles"
+import HeaderContainer from "@/components/Header"
+
 const Multimidia = () => {
-    return (
-        <div>
-            <h1>Pagina Multimidia</h1>
-        </div>
-    )
+  return (
+    <BodyOfPagesStyled>
+      <HeaderContainer />
+    </BodyOfPagesStyled>
+  )
 }
 
 export default Multimidia

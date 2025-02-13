@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NavStyled = styled.nav`
+export const MenuNavStyled = styled.nav`
   display: block;
 
   h1 {

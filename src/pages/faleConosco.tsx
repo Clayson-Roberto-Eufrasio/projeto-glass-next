@@ -1,10 +1,12 @@
+import { BodyOfPagesStyled } from "@/components/BodyOfPages/styles"
+import HeaderContainer from "@/components/Header"
+
 const FaleConosco = () => {
-    return (
-        <div>
-            <h1>Nova Pagina</h1>
-            <p>Funcionando ok</p>
-        </div>
-    )
+  return (
+    <BodyOfPagesStyled>
+      <HeaderContainer />
+    </BodyOfPagesStyled>
+  )
 }
 
 export default FaleConosco

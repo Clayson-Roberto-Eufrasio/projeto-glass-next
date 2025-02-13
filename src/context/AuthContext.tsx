@@ -3,8 +3,10 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 interface AppContextType {
-  icone: string;
-  setIcone: React.Dispatch<React.SetStateAction<string>>;
+  iconeAtual: string;
+  iconeTemporario: string;
+  setIconeTemporario: React.Dispatch<React.SetStateAction<string>>;
+  handleClick: (newIcon: string) => void;
 }
 
 // Criando o contexto com valor padrão
@@ -18,12 +20,20 @@ interface AppProviderProps {
 
 export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
 
-  const [icone, setIcone] = useState("/images/glass-oculos-preto-peq.webp")
+  const [iconeAtual, setIconeAtual] = useState("/images/glass-oculos-preto-peq.webp") // Icone inicial 
+  const [iconeTemporario, setIconeTemporario] = useState(iconeAtual) // Altera entre os icones
+
+  const handleClick = (newIcon: string) => {
+    setIconeAtual(newIcon)
+    setIconeTemporario(newIcon)
+  }
 
   return (
     <AppContext.Provider value={{
-      icone,
-      setIcone,
+      iconeAtual,
+      iconeTemporario,
+      setIconeTemporario,
+      handleClick,
     }}>
       {children}
     </AppContext.Provider>
