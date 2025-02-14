@@ -7,6 +7,13 @@ export const MenuNavStyled = styled.nav`
     display: none;
   }
 
+  ul {
+    text-transform: uppercase;
+    position: absolute;
+    top: -18px;
+    left: 593px;
+  }
+
   li {
     display: inline-block;
     padding: 10px;

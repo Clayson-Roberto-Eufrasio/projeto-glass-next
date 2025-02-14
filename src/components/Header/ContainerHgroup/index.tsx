@@ -1,6 +1,7 @@
 import { ContainerHgroupStyled } from "./styles"
 import glass from "../../../../public/images/glass-logo-peq.webp"
 import Image from "next/image"
+
 const ContainerHgroup = () => {
   return (
     <ContainerHgroupStyled>
