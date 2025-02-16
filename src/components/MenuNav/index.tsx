@@ -7,6 +7,7 @@ const MenuNav = () => {
 
   return (
     <MenuNavStyled id="menuPrincipal">
+      
       <h1> Menu Principal </h1>
       <ul>
         <li 
@@ -44,6 +45,7 @@ const MenuNav = () => {
             href="/faleConosco"
             onClick={() => handleClick("/images/contato.webp")}> Fale conosco </Link>
         </li>
+
       </ul>
     </MenuNavStyled>
   )

@@ -9,9 +9,6 @@ export const MenuNavStyled = styled.nav`
 
   ul {
     text-transform: uppercase;
-    position: absolute;
-    top: -18px;
-    left: 593px;
   }
 
   li {
